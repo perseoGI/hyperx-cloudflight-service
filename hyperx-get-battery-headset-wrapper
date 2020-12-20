@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# This wrapper is needed to allow polybar to plot the battery percentage
+while [ true ]; do
+    battery=`/home/perseo/scripts/hyperx-cloud-flight/hyperx-client battery`
+    echo ${battery}%
+    sleep 1
+done &
+
+wait
