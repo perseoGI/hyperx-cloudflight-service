@@ -17,3 +17,7 @@ compile_commands.json
 coverage.info
 *.map
 .cache/
+
+*
+!*.c
+!Makefile
